@@ -1,0 +1,64 @@
+
+# Maven directories
+target/
+
+# Maven specific files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Eclipse specific files (if you use Eclipse)
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA specific files (if you use IntelliJ IDEA)
+.idea/
+*.iml
+*.iws
+
+# NetBeans specific files (if you use NetBeans)
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code specific files (if you use VS Code)
+.vscode/
+
+# MacOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Java class files
+*.class
+
+# Generated files
+*.war
+*.ear
+*.jar
+
+# Others
+*.~*
+*.bak
+*.backup
+*.orig
+*.rej
+*.old
+*.out
+*.sublime-project
+*.sublime-workspace
