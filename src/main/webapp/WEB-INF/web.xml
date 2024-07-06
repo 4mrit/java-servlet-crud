@@ -4,12 +4,12 @@
          version="3.1">
 
     <servlet>
-        <servlet-name>StudentServlet</servlet-name>
-        <servlet-class>com.example.StudentServlet</servlet-class>
+        <servlet-name>EmployeeServlet</servlet-name>
+        <servlet-class>com.example.controller.EmployeeServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>StudentServlet</servlet-name>
-        <url-pattern>/students</url-pattern>
+        <servlet-name>EmployeeServlet</servlet-name>
+        <url-pattern>/employees</url-pattern>
     </servlet-mapping>
 
 </web-app>
