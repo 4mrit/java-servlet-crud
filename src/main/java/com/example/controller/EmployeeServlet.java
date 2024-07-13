@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -59,6 +60,9 @@ public class EmployeeServlet extends HttpServlet {
       EmployeeDao.addEmployee(employee);
       PrintWriter out = response.getWriter();
       out.print("Employee added Successfully !!");
+
+      RequestDispatcher requestDispatcher = request.getRequestDispatcher("/employees/success");
+      requestDispatcher.forward(request, response);
     } catch (Exception e) {
       response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
       response.getWriter().print("Error adding Employee !!");
@@ -91,6 +95,9 @@ public class EmployeeServlet extends HttpServlet {
       EmployeeDao.updateEmployee(employee);
       PrintWriter out = response.getWriter();
       out.print("Employee updated Successfully !!");
+
+      RequestDispatcher requestDispatcher = request.getRequestDispatcher("/employees/success");
+      requestDispatcher.include(request, response);
     } catch (Exception e) {
       response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
       response.getWriter().print("Error updating Employee !!");
